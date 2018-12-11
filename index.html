@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  body {
+    font-family:'Helvetica'
+  }
+  ul {
+    list-style:none;
+    border:1px solid #333;
+    padding-left:0;
+  }
+  li {
+    padding:1rem;
+  }
+  li:nth-child(even) {
+    background:#eee;
+  }
+  </style>
+</head>
+<body>
+<h1>
+  SimpList
+</h1>
+<p>
+  A simple list application for tasks.
+</p>
+<ul id='list'>
+  <li>
+    <input type="checkbox" /> This is the first task
+  </li>
+  <li>
+    <input type="checkbox" /> Here is a another one
+  </li>
+  <li>
+    <input type="checkbox" /> Another task right here
+  </li>
+</ul>
+
+<script>
+(function() {
+
+  let SimpList = class {
+    constructor() {
+
+    }
+  }
+
+  let tempTaskData = {
+    0: {
+      title: 'Study and practice ES6 features',
+      complete: false,
+    },
+    1: {
+      title: 'Review project experience',
+      complete: false,
+    },
+    2: {
+      title: 'Study company',
+      complete: false,
+    },
+  };
+  document.addEventListener("DOMContentLoaded", () => {
+    let list = document.getElementById('list');
+  });
+})();
+</script>
+
+</body>
+</html>
